@@ -79,7 +79,7 @@ for i in range(8,15):
     with open('movies.csv', 'a', newline='', encoding='utf-8-sig') as f:
         writer = csv.writer(f)
         if i == 1:
-            writer.writerow(['movie_id','movie_name','release','box_office','avg_price','avg_people','movie_score','movie_category','country','movie_link'])
+            writer.writerow(['movie_id','movie_name','release','box_office','avg_price','avg_people','movie_score','movie_category','country','movie_link','movie_time'])
         for movie in movies:
-            writer.writerow([movie['movie_id'],movie['movie_name'],movie['release'],movie['box_office'],movie['avg_price'],movie['avg_people'],movie['movie_score'],movie['movie_category'],movie['country'],movie['movie_link']])
+            writer.writerow([movie['movie_id'],movie['movie_name'],movie['release'],movie['box_office'],movie['avg_price'],movie['avg_people'],movie['movie_score'],movie['movie_category'],movie['country'],movie['movie_link'],movie['movie_time']])
         movies = []
